@@ -1962,6 +1962,104 @@ SEC({short:'Essays',title:'Essays (15 marks)',blocks:[
 ['ul',[`<b>အကြောင်းအရာ −</b> အချက်အားလုံး ဖြေပြီး ဥပမာပါ။`,`<b>ဖွဲ့စည်းပုံ −</b> ရှင်းသောစာပိုဒ်၊ ဆက်စပ်စကားလုံး၊ နိဂုံး။`,`<b>ဘာသာစကား −</b> သဒ္ဒါ unit များမှ ပုံစံအမျိုးမျိုး (participle phrase၊ relative clause၊ conditional)။`,`<b>မှန်ကန်မှု −</b> စာလုံးပေါင်း၊ tense၊ singular/plural၊ စာလုံးကြီး၊ ပုဒ်ရပ်။`,`<b>အရှည် −</b> ကန့်သတ်ချက်အတွင်း။`]],
 ['tip',`ဆောင်းပါးထဲတွင် စာအုပ်ထဲက သဒ္ဒါကို အသုံးပြုပါ − conditional တစ်ခု၊ participle phrase တစ်ခု၊ relative clause တစ်ခု၊ <i>not only … but also</i> တစ်ခု။ သင်တန်းကို သိကြောင်း စစ်သူအား ပြသရာ ရောက်ပါတယ်။`,'အမှတ်တိုးနည်း']
 ]});
+/* ================= Essay feedback: a worked example ================= */
+(function(){
+const X=(w,f)=>`<b style="background:var(--hl);padding:0 3px;border-radius:3px">${w}</b> <i>(→ ${f})</i>`;
+const ESSAY=`
+<p><b>Introduction</b></p>
+<p>Nowadays, there are many vehicles which travel all over the world. People use many vehicles with ${X('diseal','diesel')} engines. Although some development is good for us, the other development is not good for us because some places have no energy resources. The energy development is very ${X('convenience','convenient')} for the humans. On the other hand, it causes ${X('many pollution','a lot of pollution')}.</p>
+<p><b>Body</b></p>
+<p>${X('In today,','Nowadays,')} we use many techniques to do our ${X('works','work')} as well as to stay ${X('comfort','comfortable')}. ${X('Almost all people in the world who do their work for their survival.','No main verb. Try: Almost all people in the world work for their survival.')} ${X('As the using of','Because of the use of')} artificial techniques, many natural ${X('environment','environments')} and wildlife ${X('has','have')} adverse ${X('affect','effects')}. Urbanisation, industrialisation and overpopulation are good for our society, but these ${X('development causes','developments cause')} ${X('many pollution','a lot of pollution')} such as air pollution, water pollution, soil pollution, noise pollution and light pollution.</p>
+<p>${X('The people who dispose many waste and rubbish into water bodies of any sizes such as lakes, rivers, ponds and so on.','No main verb. Try: People dispose of waste and rubbish in water bodies such as lakes, rivers and ponds.')} As a result, water pollution will occur. Many people ${X('live in cities use','who live in cities use')} the light without control. This is the major reason ${X('of','for')} light pollution. Moreover, many factories dispose ${X('many gases','of many gases')} into the atmosphere. As a result, air pollution will occur and cause acid rain. There are many places ${X('where celebrate','where people celebrate')} traditional festivals ${X('with opening loudspeakers','with loudspeakers')}. As a result, noise pollution will occur. Many ${X('farmer or grower','farmers or growers')} use pesticides and fertiliser without restriction. This leads to soil pollution. On the ${X('othere','other')} hand, environmental pollution ${X('are','is')} caused by natural events such as wildfire and volcanic eruption.</p>
+<p><b>Conclusion</b></p>
+<p>To sum up, pollution ${X('are','is')} caused by natural events and human activities. ${X('All the people in the world who are responsible to reduce these pollution.','No main verb. Try: All people in the world are responsible for reducing pollution.')} The above factors are causes and effects of pollution.</p>`;
+
+SEC({short:'Essay feedback',title:'Essay feedback: a worked example',blocks:[
+['p',`This is a real Grade 12 student essay on <b>The causes and effects of pollution</b>. It is a good example because it has strong ideas, and the same few small mistakes appear in many students’ writing. Read it, then use the habits at the end on your own essays.`],
+['tip',`<b>What is good:</b> a clear shape (introduction, body, conclusion); all five kinds of pollution; good linking words (<i>Although, On the other hand, As a result, Moreover, To sum up</i>); strong topic words (<i>urbanisation, adverse, pesticides, fertiliser</i>). The marked words below are small fixes that raise the mark.`,'Good work'],
+['p',`<b>How to read it:</b> the <b style="background:var(--hl);padding:0 3px;border-radius:3px">highlighted words</b> are mistakes. The <i>(→ …)</i> after each one shows the fix.`],
+['ex',ESSAY,'The essay with the main fixes marked'],
+['h3','Suggestions for your next essay'],
+['p',`Choose one or two habits at a time. Small steps are easier than fixing everything at once.`],
+['h3','1. Check the subject and the verb in every sentence'],
+['p',`Every full sentence needs a <b>subject</b> (who or what) and a <b>main verb</b> (the action or state). Words like <i>who, which</i> and <i>where</i> start a describing part. They do not replace the main verb.`],
+['ol',[`Find the subject. Ask: who or what is this sentence about?`,`Find the verb. Ask: what does the subject do, or what is it?`,`If you cannot find a main verb, add one.`]],
+['table',['Sentence in the essay','Problem','Fix'],[
+['Almost all people in the world who do their work for their survival.','Subject “people”, but the only verb is inside “who do”. There is no main verb.','Almost all people in the world work for their survival.'],
+['The people who dispose many waste and rubbish into water bodies.','Subject “people”, but no main verb.','People dispose of waste and rubbish in water bodies.'],
+['All the people in the world who are responsible to reduce these pollution.','Subject “people”, but no main verb.','All people in the world are responsible for reducing pollution.']
+]],
+['h3','2. Make the verb agree with the subject'],
+['p',`Look at the noun just before the verb. One thing needs <i>is / has / -s</i>. More than one thing needs <i>are / have</i> and no <i>-s</i>.`],
+['table',['Sentence in the essay','Fix','Why'],[
+['these development causes','these developments cause','“these” and “developments” are plural, so the verb has no -s.'],
+['environmental pollution are caused','environmental pollution is caused','“pollution” is one uncountable thing, so use “is”.'],
+['pollution are caused by natural events','pollution is caused by natural events','Same rule: pollution is singular.'],
+['many natural environment and wildlife has','many natural environments and wildlife have','“many” needs a plural noun, and a plural subject needs “have”.']
+]],
+['tip',`Say the subject with “it” or “they”. If it is “it”, use <i>is / has / -s</i>. If it is “they”, use <i>are / have</i>.`,'Quick test'],
+['h3','3. Other habits that raise the mark'],
+['ol',[
+`<b>Write about both causes and effects.</b> The title says <i>causes and effects</i>. Add a paragraph on effects: illness, acid rain, damage to wildlife, climate change.`,
+`<b>Countable and uncountable nouns.</b> Use <i>a lot of</i> or <i>much</i> with pollution, waste and energy. Use <i>many</i> only with nouns you can count (factories, farmers).`,
+`<b>Space after punctuation.</b> Leave one space after every comma and full stop.`,
+`<b>Word forms.</b> After <i>be</i> use an adjective: convenience → <i>convenient</i>, comfort → <i>comfortable</i>. <b>Effect</b> is the noun. <b>Affect</b> is the verb.`,
+`<b>Fixed phrases.</b> Learn them together: <i>dispose of, the reason for, responsible for + -ing, because of the use of</i>.`,
+`<b>Plural -s.</b> Add -s to countable nouns (farmers, growers, environments). <i>Work</i> has no -s in this meaning.`,
+`<b>Spelling check.</b> In the last 2 minutes, check the topic words and common words (diesel, other, rubbish).`
+]],
+['h3','A 3-minute checking routine'],
+['ul',[
+`Read each sentence aloud. Does it have a subject and a main verb?`,
+`Does the verb match the subject (is/are, has/have, -s)?`,
+`Are there spaces after commas and full stops?`,
+`Did I check the spelling of the main words?`,
+`Did I write about both causes and effects?`
+]]
+]},{short:'ဆောင်းပါး ဝေဖန်ချက်',title:'ဆောင်းပါး ဝေဖန်ချက် − နမူနာ',blocks:[
+['p',`ဤသည်မှာ <b>The causes and effects of pollution</b> အကြောင်း ဂရိတ် ၁၂ ကျောင်းသားတစ်ဦး၏ ဆောင်းပါးအစစ်ဖြစ်ပါတယ်။ အကြံဉာဏ်ကောင်းတွေ ပါပြီး၊ ကျောင်းသားများစွာ ရေးရာတွင် ဖြစ်တတ်သော အမှားငယ်များ ပါသောကြောင့် ကောင်းသော နမူနာ ဖြစ်ပါတယ်။ ဖတ်ပြီး နောက်ဆုံးက အကျင့်များကို သင့်ဆောင်းပါးများတွင် သုံးပါ။`],
+['tip',`<b>ကောင်းသောအချက်များ −</b> ပုံစံ ရှင်းလင်း (နိဒါန်း၊ ကိုယ်ထည်၊ နိဂုံး)၊ ညစ်ညမ်းမှု ငါးမျိုးလုံး ပါ၊ ချိတ်ဆက်စကားလုံးများ ကောင်း (<i>Although, On the other hand, As a result, Moreover, To sum up</i>)၊ အဆင့်မြင့်စကားလုံးများ (<i>urbanisation, adverse, pesticides, fertiliser</i>)။ အောက်ပါ အမှတ်အသားပြုထားသော စကားလုံးများသည် မှတ်တက်စေသော အမှားငယ်များသာ ဖြစ်ပါတယ်။`,'ကောင်းသောအလုပ်'],
+['p',`<b>ဖတ်နည်း −</b> <b style="background:var(--hl);padding:0 3px;border-radius:3px">အလင်းပြထားသော စကားလုံးများ</b> သည် အမှားများ ဖြစ်ပါတယ်။ တစ်လုံးချင်းနောက်က <i>(→ …)</i> သည် ပြင်ဆင်ချက် ဖြစ်ပါတယ်။`],
+['ex',ESSAY,'အဓိကအမှားများကို အမှတ်အသားပြုထားသော ဆောင်းပါး'],
+['h3','နောက်ဆောင်းပါးအတွက် အကြံပြုချက်များ'],
+['p',`တစ်ကြိမ်လျှင် အကျင့် တစ်ခု နှစ်ခုသာ ရွေးပါ။ အားလုံးကို တစ်ပြိုင်နက် ပြင်ခြင်းထက် ခြေလှမ်းငယ်များက ပိုလွယ်ပါတယ်။`],
+['h3','၁။ စာကြောင်းတိုင်းတွင် subject နှင့် verb ကို စစ်ပါ'],
+['p',`စာကြောင်းအပြည့်အစုံတိုင်းတွင် <b>subject</b> (ဘယ်သူ/ဘာ) နှင့် <b>main verb</b> (လုပ်ရပ် သို့မဟုတ် အခြေအနေ) လိုပါတယ်။ <i>who, which, where</i> တို့သည် ရှင်းပြသော အပိုင်းကို စတင်စေသော်လည်း main verb ကို မအစားထိုးနိုင်ပါ။`],
+['ol',[`Subject ကို ရှာပါ − ဤစာကြောင်းသည် ဘယ်သူ/ဘာ အကြောင်းလဲ။`,`Verb ကို ရှာပါ − subject က ဘာလုပ်သလဲ၊ ဘာဖြစ်သလဲ။`,`Main verb မတွေ့လျှင် ထည့်ပါ။`]],
+['table',['ဆောင်းပါးထဲက စာကြောင်း','ပြဿနာ','ပြင်ချက်'],[
+['Almost all people in the world who do their work for their survival.','Subject “people” ရှိသော်လည်း verb သည် “who do” ထဲမှာသာရှိ။ main verb မရှိ။','Almost all people in the world work for their survival.'],
+['The people who dispose many waste and rubbish into water bodies.','Subject “people” ရှိသော်လည်း main verb မရှိ။','People dispose of waste and rubbish in water bodies.'],
+['All the people in the world who are responsible to reduce these pollution.','Subject “people” ရှိသော်လည်း main verb မရှိ။','All people in the world are responsible for reducing pollution.']
+]],
+['h3','၂။ Verb ကို subject နှင့် ကိုက်ညီအောင် ရေးပါ'],
+['p',`Verb ရှေ့က noun ကို ကြည့်ပါ။ တစ်ခုတည်းဆိုလျှင် <i>is / has / -s</i> သုံးပါ။ တစ်ခုထက်များလျှင် <i>are / have</i> သုံးပြီး <i>-s</i> မထည့်ပါနှင့်။`],
+['table',['ဆောင်းပါးထဲက စာကြောင်း','ပြင်ချက်','အကြောင်းရင်း'],[
+['these development causes','these developments cause','“these” နှင့် “developments” သည် များပြားသဖြင့် verb တွင် -s မထည့်ပါ။'],
+['environmental pollution are caused','environmental pollution is caused','“pollution” သည် ရေတွက်မရသော တစ်ခုတည်းဖြစ်၍ “is” သုံးပါ။'],
+['pollution are caused by natural events','pollution is caused by natural events','စည်းမျဉ်းတူ − pollution သည် singular ဖြစ်ပါတယ်။'],
+['many natural environment and wildlife has','many natural environments and wildlife have','“many” နောက်တွင် များပြားသော noun လိုပြီး၊ များပြားသော subject အတွက် “have” သုံးပါ။']
+]],
+['tip',`Subject ကို “it” သို့မဟုတ် “they” ဖြင့် အစားထိုးကြည့်ပါ။ “it” ဆိုလျှင် <i>is / has / -s</i>၊ “they” ဆိုလျှင် <i>are / have</i> သုံးပါ။`,'မြန်မြန်စစ်နည်း'],
+['h3','၃။ မှတ်တက်စေသော တခြားအကျင့်များ'],
+['ol',[
+`<b>အကြောင်းရင်းနှင့် အကျိုးဆက် နှစ်ခုလုံး ရေးပါ။</b> ခေါင်းစဉ်တွင် <i>causes and effects</i> ပါသည်။ အကျိုးဆက်အတွက် ပိုဒ်တစ်ပိုဒ် ထည့်ပါ − ရောဂါ၊ acid rain၊ တိရစ္ဆာန်များ ထိခိုက်ခြင်း၊ climate change။`,
+`<b>ရေတွက်နိုင်/မရနိုင်သော noun။</b> pollution, waste, energy တို့နှင့် <i>a lot of</i> သို့မဟုတ် <i>much</i> သုံးပါ။ <i>many</i> ကို ရေတွက်နိုင်သော noun (factories, farmers) နှင့်သာ သုံးပါ။`,
+`<b>ပုဒ်ဖြတ်ပြီးနောက် နေရာလွတ်။</b> comma နှင့် full stop တိုင်းနောက်တွင် နေရာလွတ်တစ်ခု ချန်ပါ။`,
+`<b>စကားလုံးပုံစံ။</b> <i>be</i> နောက်တွင် adjective သုံးပါ − convenience → <i>convenient</i>၊ comfort → <i>comfortable</i>။ <b>effect</b> သည် noun၊ <b>affect</b> သည် verb ဖြစ်ပါတယ်။`,
+`<b>တသားတည်းသုံးစကားစုများ။</b> အတူသင်ပါ − <i>dispose of, the reason for, responsible for + -ing, because of the use of</i>။`,
+`<b>အများကိန်း -s။</b> ရေတွက်နိုင်သော noun များတွင် -s ထည့်ပါ (farmers, growers, environments)။ ဤအဓိပ္ပာယ်ဖြင့် <i>work</i> တွင် -s မထည့်ပါ။`,
+`<b>စာလုံးပေါင်းစစ်ခြင်း။</b> နောက်ဆုံး ၂ မိနစ်တွင် ခေါင်းစဉ်စကားလုံးများနှင့် အသုံးများသော စကားလုံးများ (diesel, other, rubbish) ကို စစ်ပါ။`
+]],
+['h3','၃ မိနစ် စစ်ဆေးမှုအစီအစဉ်'],
+['ul',[
+`စာကြောင်းတစ်ကြောင်းချင်းကို အသံထွက်ဖတ်ပါ။ Subject နှင့် main verb ရှိသလား။`,
+`Verb သည် subject နှင့် ကိုက်ညီသလား (is/are, has/have, -s)။`,
+`Comma နှင့် full stop နောက်တွင် နေရာလွတ် ရှိသလား။`,
+`အဓိကစကားလုံးများ၏ စာလုံးပေါင်းကို စစ်ပြီးပြီလား။`,
+`အကြောင်းရင်းနှင့် အကျိုးဆက် နှစ်ခုလုံး ရေးထားသလား။`
+]]
+]});
+})();
 /* ================= 14. HOW ENGLISH WORKS ================= */
 SEC({short:'English patterns',title:'How English works',blocks:[
 ['p',`The exam is easier when you understand how English behaves. These habits of the language are tested again and again.`],
